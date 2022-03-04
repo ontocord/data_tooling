@@ -8,7 +8,7 @@ def apply_regex_anonymization(
     lang_id: str,
     context_window: int = 20,
     anonymize_condition=None,
-    tag_type=None,
+    tag_type= {'IP_ADDRESS', 'KEY', 'ID', 'PHONE', 'USER', 'EMAIL', 'LICENSE_PLATE'},
 ) -> str:
     """
     Params:
